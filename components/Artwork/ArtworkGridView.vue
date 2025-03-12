@@ -1,22 +1,5 @@
 <template>
   <div v-if="artworksData.data">
-    <!-- <div
-      v-if="Artcycle && Artcycle.Description && Artcycle.Title"
-      class="pt-10 pb-10 md:py-10 text-justify flex flex-col gap-4"
-      :class="!filtersBar ? 'px-4 md:px-8' : 'px-4 md:px-0 md:pr-8'"
-    >
-      <h2 v-text="Artcycle.Title" class="text-2xl"></h2>
-      <div class="md:text-lg">
-        <div v-html="limitedDescription"></div>
-        <button
-          class="mt-2"
-          v-if="Artcycle.Description.length > 100"
-          @click="DescriptionOpen = !DescriptionOpen"
-        >
-          {{ DescriptionOpen ? $t("Hide text") : $t("Read more") }}
-        </button>
-      </div>
-    </div> -->
     <div
       class="py-10 grid grid-cols-1 md:grid-cols-2 md:text-lg gap-4 md:gap-8 lg:gap-16 [&>div>a>div>img]:transition-all [&>div>a>div>picture>img]:duration-500"
       :class="!filtersBar ? 'px-4 md:px-8' : 'px-4 md:px-0 md:pr-8'"
