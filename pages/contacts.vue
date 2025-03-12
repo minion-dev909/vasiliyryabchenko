@@ -20,5 +20,4 @@ const PageName = ref("Contacts");
 
 const { data: contactsData, error1 } = await useFetch("/api/contacts");
 console.log(contactsData);
-console.log("contacts");
 </script>
