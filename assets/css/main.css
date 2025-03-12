@@ -1,0 +1,369 @@
+:root {
+  font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: rgba(45, 45, 45, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#site-name {
+  font-family: Nunito Sans, sans-serif;
+}
+#app {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.cursor-zoom {
+  cursor: url("/cursor-zoom.png"), auto;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+/* Formatting */
+
+i {
+  font-style: italic;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+figure img {
+  padding: 3em;
+  background-color: rgb(249 250 251 / 1);
+}
+
+figure figcaption {
+  padding: 0.5em 0 1em 0;
+  color: gray;
+  font-size: smaller;
+}
+
+figcaption {
+  width: 100%;
+  font-weight: 300;
+  font-size: medium;
+}
+
+img {
+  user-select: none;
+}
+
+p a {
+  opacity: 0.6;
+}
+p a:hover {
+  opacity: 1;
+}
+/* Swiper */
+
+.pagination-full-w.pagination-equal .swiper-pagination .pagination-line {
+  width: 100%;
+}
+
+.pagination-bottom-center .swiper-pagination {
+  bottom: 1em !important;
+}
+
+.control-pagination.pagination-bottom-center .swiper-button-next,
+.control-pagination.pagination-bottom-center .swiper-button-prev {
+  bottom: 1em !important;
+}
+
+.swiper-pagination {
+  z-index: 20 !important;
+}
+.pagination-stable .swiper-pagination,
+.pagination-full-w .swiper-pagination {
+  width: 100%;
+}
+
+.pagination-flex .swiper-pagination {
+  display: flex;
+}
+
+.swiper.wrapper-flex .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper.wrapper-pad .swiper-wrapper {
+  padding: 0 2em;
+}
+
+.pagination-full-h .swiper-pagination {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-backface-hidden.pagination-full-h .swiper-pagination {
+  display: none;
+}
+
+.pagination-full-h .swiper-pagination .pagination-line {
+  align-self: stretch;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .pagination-lines,
+.pagination-lines.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+}
+
+.relative-swiper-pagination .swiper-pagination {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.restricted-swiper .swiper-pagination {
+  text-align: left !important;
+  margin-left: 4rem;
+}
+
+.swiper-fade .swiper-slide {
+  opacity: 0;
+  background-color: #ffffff;
+}
+.swiper-pagination-lock {
+  display: none !important;
+}
+
+.pagination-line {
+  background-color: rgb(228, 228, 228);
+  opacity: 1;
+  width: 15px;
+  height: 2px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.pagination-equal .pagination-line {
+  width: 30px;
+}
+.pagination-line:hover {
+  background-color: rgb(174, 174, 174);
+}
+
+.pagination-line-active {
+  width: 30px;
+  transition: all 0.3s ease-in-out;
+  left: 0;
+  background-color: rgb(65, 65, 65);
+}
+.swiper-pagination-vertical .pagination-line {
+  width: 3px;
+  height: 10px;
+  display: block;
+}
+.swiper-pagination-vertical .pagination-line-active {
+  width: 3px;
+  height: 30px;
+  display: block;
+}
+
+.fullSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.control-pagination .swiper-button-next,
+.control-pagination .swiper-button-prev {
+  z-index: 30;
+  top: auto !important;
+  bottom: 0 !important;
+  height: 1em !important;
+}
+.control-pagination .swiper-button-next {
+  right: 1.5em;
+}
+.control-pagination .swiper-button-prev {
+  left: 1.5em;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 10;
+  opacity: 0.7;
+  color: #213547 !important;
+}
+.swiper-button-disabled {
+  opacity: 0.2 !important;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1 !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1rem !important;
+}
+
+.media-33 {
+  height: 38em;
+  max-height: 38em;
+}
+body.bottom-construction-shop .footer {
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .pagination-equal.swiper-horizontal .swiper-pagination {
+    display: flex;
+  }
+  .pagination-equal .swiper-pagination-horizontal .pagination-line {
+    width: 100%;
+  }
+  .pagination-equal .swiper-pagination-horizontal {
+    bottom: 0 !important;
+  }
+  body.bottom-construction .footer {
+    padding-bottom: 3rem;
+  }
+  body.bottom-construction-shop .footer {
+    padding-bottom: 7rem;
+  }
+  body.bottom-construction-shop .query-bar  {
+    bottom: 4rem;
+  }
+  .pagination-equal .pagination-line {
+    height: 1.5px;
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .pagination-fixed-bottom .swiper-pagination {
+    position: fixed;
+    bottom: 3.35em !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .media-33 {
+    height: 30em;
+    max-height: 30em;
+  }
+}
+
+@media (max-width: 450px) {
+  .media-33 {
+    height: auto;
+  }
+}
+/* ANIMATIONS */
+
+/* Fade transition */
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 500ms;
+}
+.fadedelay-enter-active,
+.fadedelay-leave-active {
+  transition: opacity 500ms;
+}
+.fadedelaylong-enter-active,
+.fadedelaylong-leave-active {
+  transition: opacity 1000ms;
+  transition-delay: 500ms;
+}
+
+.fade-enter-from,
+.fade-leave-to,
+.fadedelay-enter-from,
+.fadedelay-leave-to,
+.fadedelaylong-enter-from,
+.fadedelaylong-leave-to {
+  opacity: 0;
+}
+.fadedelaylong-enter-to,
+.fadedelaylong-leave-from,
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+
+.fadedelay-enter-to,
+.fadedelay-leave-from {
+  opacity: 1;
+  transition-delay: 300ms;
+}
+
+.anim-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.anim-slide-down {
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.anim-slide-right {
+  animation: slideRight 0.5s ease-out;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.confetti {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  z-index: 9999;
+  background: var(--color);
+  top: 0;
+  left: 0;
+  will-change: transform;
+  pointer-events: none;
+}
